@@ -6,16 +6,16 @@ using UnityEngine.UI;
 public class StopWatch : MonoBehaviour
 {
     public Text stopWatchTxt = null;
-    float currentTime = 0f;
+    public float currentTime = 0f;
 
 
     private void Update()
     {
         currentTime += Time.deltaTime;
+       
+        int min = (int)currentTime / 60;
+        int hour = (int)currentTime / (60 * 60);
 
-        // 1. Time.deltaTime만 쓰세요 DateTime같은거 쓰지 마세요.
-        // 2. 코루틴 안됨
-        // 3. 변수 추가 가능
-        // 4. 어떻게든 만들면 되는데 가장 매력적인 코드면 토큰 드림
+        stopWatchTxt.text = $"{hour % 60}:{(min % 60).ToString("00")}:{(currentTime % 60).ToString("00.00")}";
     }
 }
