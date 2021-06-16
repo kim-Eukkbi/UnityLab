@@ -16,6 +16,13 @@ public class HomeworkSurmung : MonoBehaviour
         // 4. foreach 안쓰고 Peek 쓰면 됩니다. Peek은 현재 큐에서 맨 첫번째애의 값을 반환해준다.(Queue에서 빼진 않고)
         // 5. 총알이 화면 밖으로 나가면 SetActive를 false로 해준다
 
+
+
+
+
+
+
+
         // Homework 02
         // 플레이어를 따라오는 펫 만들기
 
@@ -25,3 +32,13 @@ public class HomeworkSurmung : MonoBehaviour
         // 4. foreach 절대 쓰지 말것
     }
 }
+
+
+
+
+
+
+
+
+
+
